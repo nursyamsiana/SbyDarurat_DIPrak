@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@800&family=Montserrat&family=Philosopher&display=swap');
+
+:root{
+    --main-color: #eeeeee;
+    --black: #171F40;
+    --blue: #0C2180;
+    --red: #DA1212;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Philosopher', sans-serif;
+    font-family: 'Big Shoulders Stencil Text', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;    
+    color: var(--main-color);
+}
+
+li, a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+header{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    background: var(--blue);
+}
+
+.logo{
+    line-height: 80px;
+    padding: 0 60px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav_fitur{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav_fitur li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_fitur li:hover{
+    padding: 20px 20px;
+    background-color: var(--red);
+    transition: all 0.5s ease 0s;
+}
+
+.dropdown-content{
+    margin-top: 22px;
+    display: none;
+    position: absolute;
+    background-color: var(--main-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,2, 0.5);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: var(--black);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
+    color: #DA1212;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
