@@ -17,4 +17,6 @@ Route::get('/', function () {
     return view('vita.home');
 });
 
-
+Route::get('nana', function () {
+    return view('nana.lapor4');
+});
