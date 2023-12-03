@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles_uswa.css">
+    <link rel="stylesheet" href="assets/styles_uswa.css">
     <title>Lapor</title>
 </head>
 <body>
@@ -90,7 +90,7 @@
                 <button type="button" class="submit-button" onclick="backButton()">Back</button>
                 <button type="button" class="submit-button" onclick="openPopup()">Submit</button>
                 <div class="popup" id="popup">
-                    <img src="warning.png">
+                    <img src="{{ asset('assets/icons/warning.png') }}">
                     <h2 class="failed-alert">Failed :(</h2>
                     <button type="button" class="button-alert1">Reupload the Report</button>
                     <button type="button" class="button-alert2" onclick="closePopup()" >Cancel the Report</button>
