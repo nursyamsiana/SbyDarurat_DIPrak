@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles_uswa.css">
+    <link rel="stylesheet" href="styles_uswa.css">
     <title>Lapor</title>
 </head>
 <body>
@@ -87,8 +87,14 @@
         
             <!-- Tombol button di bawah container -->
             <div class="submit-button-container">
-                <button type="button" onclick="backButton()">Back</button>
-                <button type="button" onclick="submitForm()">Submit</button>
+                <button type="button" class="submit-button" onclick="backButton()">Back</button>
+                <button type="button" class="submit-button" onclick="openPopup()">Submit</button>
+                <div class="popup" id="popup">
+                    <img src="warning.png">
+                    <h2 class="failed-alert">Failed :(</h2>
+                    <button type="button" class="button-alert1">Reupload the Report</button>
+                    <button type="button" class="button-alert2" onclick="closePopup()" >Cancel the Report</button>
+                </div>
             </div>
         
             <div class="O2KPzo">
@@ -106,9 +112,16 @@
            var container = document.getElementById(containerId);
            container.innerHTML = ''; // Hapus konten di dalam kontainer
         }
+
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup")
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup")
+        }
      </script>
 </body>
 </html>
-
 
 @stop
