@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,7 @@ Route::get('/', function () {
 Route::get('nana', function () {
     return view('nana.lapor4');
 });
+
+Route::get('/lapor3_upload2', [Controller::class, 'lapor3up2']);
+Route::get('/status_verif', [Controller::class, 'statusVerif']);
+
