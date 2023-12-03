@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.report-container {
+    margin: 20px;
+    margin-top: 5px;
+}
+
+.report-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 3px;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.back-button {
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.accepted-button {
+    color: black;
+    background-color: #4CAF50;
+    border: none;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 1px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.accepted-button:hover{
+    background-color: rgb(17,70,143, 0.25);
+
+}
+
+.progress-button {
+    color: black;
+    background-color: #f7e463;
+    border: none;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 1px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.progress-button:hover{
+    background-color: rgb(17,70,143, 0.25);
+
+}
+
+.declined-button {
+    color: black;
+    background-color: #eb6060;
+    border: none;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 1px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.declined-button:hover{
+    background-color: rgb(17,70,143, 0.25);
+
+}
