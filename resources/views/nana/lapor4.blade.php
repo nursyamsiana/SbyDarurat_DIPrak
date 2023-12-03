@@ -82,5 +82,5 @@
     </div>
 </div>
 
-<script src="assets/script.js"></script>
+<script src="assets/stepper.js"></script>
 @stop
