@@ -1,0 +1,341 @@
+.box {
+    align-items: center;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.laporan .steps {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.steps .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    color: #999;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50%;
+    background: #fff;
+    border: 4px dashed #e0e0e0;
+}
+
+.steps .circle.active {
+    border: solid #4070f4;
+    color: #4070f4;
+}
+
+.steps .progress-bar {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #e0e0e0;
+    z-index: -1;
+}
+
+.progress-bar .indicator {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #4070f4;
+}
+
+.steps_text {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.steps_text span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 100px;
+    height: 50px;
+    width: 200px;
+    color: #999;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.steps_text .text_active {
+    color: #4070f4;
+}
+
+
+.page {
+    align-items: left;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 9.2rem 16.4rem 8.2rem 8.7rem;
+    width: 100%;
+}
+
+.page .laporan {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 0rem 16.6rem 5.9rem 0rem;
+}
+
+.page .pelaporan {
+    color: #171e3f;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2175;
+    margin-bottom: 3.6rem;
+    white-space: nowrap;
+}
+
+.page .desc {
+    color: #171e3f;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2175;
+    margin: 0rem 0rem 2rem 0.1rem;
+    white-space: nowrap;
+}
+
+.page .detail {
+    color: #171e3f;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2175;
+    white-space: nowrap;
+}
+
+.section {
+    height: 50px;
+}
+
+.page .form-group {
+    display: flex;
+    font-family: Montserrat, 'Source Sans Pro';
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 0rem 0.1rem 4.5rem 0rem;
+    align-items: baseline;
+    color: #171e3f;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2175;
+    margin-bottom: 2.7rem;
+    white-space: nowrap;
+}
+
+.page .form-group .label .important {
+    color: #da1212;
+    font-family: Montserrat, 'Source Sans Pro';
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.2175;
+}
+
+.page .form-group .answer {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.page .form-group .select-answer {
+    background: lightgray;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+    border: 2px gray solid;
+    border-radius: 0.5rem;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.page .form-group .text-box {
+    background: lightgray;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+    border: 2px gray solid;
+    border-radius: 0.5rem;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.page .form-group .menu {
+    list-style: none;
+    background: lightgray;
+    border: 1px grey solid;
+    box-shadow: 0 0.5em 1em rgba (0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    position: absolute;
+    width: 75%;
+}
+
+.select-clicked {
+    border: 2px lightgray solid;
+    box-shadow: 0 0 0.8em;
+}
+
+.select-answer:hover {
+    background: #323741;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #000000;
+    transition: 0.3s;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    list-style: none;
+    padding: 0.2e, 0.em;
+    background: #323741;
+    border: 1px grey solid;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    left: 50px;
+    width: 100%;
+    transform: translate(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li {
+    font-family: inherit;
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu-open {
+    display: block;
+    opacity: 1;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.buttons #next {
+    font: inherit;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0c217f;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    transition: all 200ms linear;
+}
+
+/* .page .answer {
+    flex-shrink: 0;
+    height: 10%;
+    margin-left: 0.0982rem;
+    position: relative;
+    width: 100%;
+    border: solid 0.1rem #171e3f;
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+
+.page .answer .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.page .answer .dropdown select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.page .answer .dropdown::after {
+    content: '\25BC';
+    font-size: 18px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.page .answer .dropdown.active select {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.page .answer .dropdown.active::after {
+    content: '\25B2';
+} */
+
+
+/* .box .div {
+    width: 100px;
+    top: 0;
+    left: 0;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #eeeeee;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -1px;
+    line-height: normal;
+    position: absolute;
+    height: 43px;
+} */
