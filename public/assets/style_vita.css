@@ -1,0 +1,327 @@
+.dashboard {
+  background-color: #0c2180;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.dashboard .div {
+  background-color: #0c2180;
+  overflow-x: hidden;
+  width: 1440px;
+  height: 848px;
+  position: relative;
+}
+
+.dashboard .button {
+  position: absolute;
+  width: 611px;
+  height: 55px;
+  top: 580px;
+  left: 146px;
+  all: unset;
+  box-sizing: border-box;
+}
+
+.dashboard .overlap-group {
+  position: relative;
+  width: 659px;
+  height: 105px;
+  top: -21px;
+  left: -21px;
+  background-image: url(./img/rectangle-10.svg);
+  background-size: 100% 100%;
+}
+
+.dashboard .magnifier {
+  top: 26px;
+  left: 565px;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+}
+
+.dashboard .text-wrapper {
+  position: absolute;
+  width: 346px;
+  height: 34px;
+  top: 31px;
+  left: 38px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #d9d9d980;
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: normal;
+}
+
+.dashboard .p {
+  position: absolute;
+  width: 623px;
+  height: 93px;
+  top: 447px;
+  left: 145px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 500;
+  color: #eeeeee;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dashboard .text-wrapper-2 {
+  position: absolute;
+  width: 698px;
+  height: 232px;
+  top: 176px;
+  left: 146px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #eeeeee;
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dashboard .line {
+  position: absolute;
+  width: 5px;
+  height: 210px;
+  top: 188px;
+  left: 93px;
+}
+
+.dashboard .gambar {
+  position: absolute;
+  width: 555px;
+  height: 555px;
+  top: 216px;
+  left: 882px;
+  background-image: url(./img/13677890-5143183-removebg-preview.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.dashboard .screenshot {
+  top: 38px;
+  left: 183px;
+  position: absolute;
+  width: 75px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.dashboard .img {
+  top: 141px;
+  left: 305px;
+  position: absolute;
+  width: 75px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.dashboard .screenshot-2 {
+  top: 299px;
+  left: 146px;
+  position: absolute;
+  width: 75px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.dashboard .navbar {
+  position: absolute;
+  width: 1440px;
+  height: 106px;
+  top: 0;
+  left: 2px;
+}
+
+.dashboard .overlap {
+  position: relative;
+  height: 106px;
+}
+
+.dashboard .rectangle {
+  width: 390px;
+  left: 1048px;
+  background-color: #eeeeee;
+  position: absolute;
+  height: 106px;
+  top: 0;
+}
+
+.dashboard .rectangle-2 {
+  width: 1048px;
+  left: 3px;
+  background-color: #0c217f;
+  position: absolute;
+  height: 106px;
+  top: 0;
+}
+
+.dashboard .line-2 {
+  position: absolute;
+  width: 1440px;
+  height: 1px;
+  top: 105px;
+  left: 0;
+  object-fit: cover;
+}
+
+.dashboard .tulisan {
+  position: absolute;
+  width: 589px;
+  height: 60px;
+  top: 23px;
+  left: 91px;
+}
+
+.dashboard .surabaya-darurat {
+  position: absolute;
+  width: 246px;
+  height: 60px;
+  top: 0;
+  left: 0;
+  font-family: "Philosopher", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 50px;
+  white-space: nowrap;
+}
+
+.dashboard .span {
+  color: #eeeeee;
+}
+
+.dashboard .text-wrapper-3 {
+  font-family: "Big Shoulders Stencil Text", Helvetica;
+  font-weight: 800;
+  color: #da1212;
+}
+
+.dashboard .text-wrapper-4 {
+  position: absolute;
+  width: 86px;
+  height: 43px;
+  top: 8px;
+  left: 500px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #eeeeee;
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: normal;
+}
+
+.dashboard .kategori {
+  position: absolute;
+  width: 166px;
+  height: 43px;
+  top: 8px;
+  left: 280px;
+}
+
+.dashboard .overlap-group-2 {
+  position: relative;
+  width: 164px;
+  height: 43px;
+}
+
+.dashboard .text-wrapper-5 {
+  position: absolute;
+  width: 158px;
+  height: 43px;
+  top: 0;
+  left: 0;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #eeeeee;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: -1px;
+  line-height: normal;
+}
+
+.dashboard .angle-arrow-small {
+  position: absolute;
+  width: 32px;
+  height: 34px;
+  top: 9px;
+  left: 132px;
+}
+
+.dashboard .ikon {
+  position: absolute;
+  width: 240px;
+  height: 55px;
+  top: 20px;
+  left: 1123px;
+}
+
+.dashboard .magnifier-2 {
+  top: 10px;
+  left: 195px;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+}
+
+.dashboard .overlap-2 {
+  position: absolute;
+  width: 52px;
+  height: 55px;
+  top: 0;
+  left: 98px;
+}
+
+.dashboard .bell {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 10px;
+  left: 0;
+}
+
+.dashboard .group {
+  position: absolute;
+  width: 27px;
+  height: 25px;
+  top: 0;
+  left: 25px;
+}
+
+.dashboard .div-wrapper {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: #da1212;
+  border-radius: 12.5px;
+}
+
+.dashboard .text-wrapper-6 {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  top: 3px;
+  left: 9px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #eeeeee;
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.dashboard .layer {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  top: 12px;
+  left: 0;
+}
