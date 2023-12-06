@@ -78,9 +78,12 @@
 <div class="container">
     <div class="buttons">
         <button id="prev" disabled>Prev</button>
-        <button id="next">Next</button>
+        <button type="submit" id="next">Submit</button>
     </div>
 </div>
+<div class="popup">
+    <img src="">
+    <
 
 <script src="assets/stepper.js"></script>
 @stop

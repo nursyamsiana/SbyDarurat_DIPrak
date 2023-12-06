@@ -2,17 +2,36 @@
 @section('content')
 
 <!-- MASUKIN HTML KALIAN DI BAWAH KOMEN INI -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles_uswa.css">
-    <title>Lapor</title>
-</head>
-<body>
+<link rel="stylesheet" href="assets/styles_uswa.css">
+<link rel="stylesheet" href="assets/style_nana.css">
 
-     <div class="content">
+<p class="title">PELAPORAN KEJADIAN ATAU BENCANA</p>
+<p class="subtitle">Laporkan segala kejadian kejahatan maupun bencana yang terjadi di sekitar Anda!</p>
+
+<br><br>
+
+<div class="container">
+    <div class="steps">
+        <span class="circle active">1</span>
+        <span class="circle active">2</span>
+        <span class="circle active">3</span>
+        <span class="circle">4</span>
+            <div class="progress-bar">
+            <span class="indicator"></span>
+            </div>
+    </div>
+    <div class="steps_text">
+        <span class="text_active">Lokasi Kejadian</span>
+        <span class="text_active">Detail</span>
+        <span class="text_active">Upload Bukti</span>
+        <span class="text">Submit</span>
+            <div class="progress-bar">
+            <span class="indicator"></span>
+            </div>
+    </div>
+    </div> 
+
+         <!-- <div class="content">
         <header>
             <h2>PELAPORAN KEJADIAN ATAU BENCANA</h2>
             <p class="subtitle">Laporkan segala kejadian kejahatan maupun bencana yang ada di sekitar Anda!.</p>
@@ -66,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="upload-container">
                 <div class="upload-section-container">
                      <div class="upload-section " id="upload-photo-section">

@@ -21,7 +21,7 @@
                 <a href="#">Kecelakaan Lantas</a>
             </div>
         </li>
-        <li><a href="#">Lapor</a></li>
+        <li><a href="/lapor">Lapor</a></li>
         <li><a href="#">Notifikasi</a></li>
         <li><a href="#">Profil</a></li>
     </u1>

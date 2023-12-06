@@ -81,3 +81,7 @@ header{
 .dropdown:hover .dropdown-content{
     display: block;
 }
+
+::-webkit-scrollbar{
+    width: 0.5px;
+}

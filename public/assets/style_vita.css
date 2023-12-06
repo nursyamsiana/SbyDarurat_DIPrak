@@ -4,22 +4,23 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  padding-top: 70px;
 }
 
 .dashboard .div {
   background-color: #0c2180;
   overflow-x: hidden;
   width: 1440px;
-  height: 848px;
+  height: 800px;
   position: relative;
 }
 
 .dashboard .button {
-  position: absolute;
+  position: flex;
   width: 611px;
   height: 55px;
-  top: 580px;
-  left: 146px;
+  /* padding-top: 1000px;
+  padding-left: 150px; */
   all: unset;
   box-sizing: border-box;
 }
@@ -28,18 +29,18 @@
   position: relative;
   width: 659px;
   height: 105px;
-  top: -21px;
+  /* top: -21px; */
   left: -21px;
   background-image: url(./img/rectangle-10.svg);
   background-size: 100% 100%;
 }
 
 .dashboard .magnifier {
-  top: 26px;
+  top: 36px;
   left: 565px;
   position: absolute;
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
 }
 
 .dashboard .text-wrapper {
@@ -60,10 +61,11 @@
   position: absolute;
   width: 623px;
   height: 93px;
-  top: 447px;
+  top: 300px;
   left: 145px;
   font-family: "Montserrat", Helvetica;
   font-weight: 500;
+  text-align: justify;
   color: #eeeeee;
   font-size: 20px;
   letter-spacing: 0;
@@ -74,7 +76,7 @@
   position: absolute;
   width: 698px;
   height: 232px;
-  top: 176px;
+  top: 80px;
   left: 146px;
   font-family: "Montserrat", Helvetica;
   font-weight: 700;
@@ -88,7 +90,7 @@
   position: absolute;
   width: 5px;
   height: 210px;
-  top: 188px;
+  top: 130px;
   left: 93px;
 }
 
@@ -96,7 +98,7 @@
   position: absolute;
   width: 555px;
   height: 555px;
-  top: 216px;
+  top: 16px;
   left: 882px;
   background-image: url(./img/13677890-5143183-removebg-preview.png);
   background-size: cover;
@@ -139,8 +141,10 @@
 }
 
 .dashboard .overlap {
-  position: relative;
+  position: flex;
   height: 106px;
+  padding-top: 400px;
+  padding-left: 130px;
 }
 
 .dashboard .rectangle {

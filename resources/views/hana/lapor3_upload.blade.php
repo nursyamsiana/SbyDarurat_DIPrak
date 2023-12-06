@@ -2,17 +2,37 @@
 @section('content')
 
 <!-- MASUKIN HTML KALIAN DI BAWAH KOMEN INI -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style_upload.css">
-    <title>Lapor</title>
-</head>
-<body>
 
-    <div class="content">
+    <link rel="stylesheet" href="assets/style_upload.css">
+    <link rel="stylesheet" href="assets/style_nana.css">
+
+<p class="title">PELAPORAN KEJADIAN ATAU BENCANA</p>
+<p class="subtitle">Laporkan segala kejadian kejahatan maupun bencana yang terjadi di sekitar Anda!</p>
+
+<br><br>
+
+<div class="container">
+    <div class="steps">
+        <span class="circle active">1</span>
+        <span class="circle active">2</span>
+        <span class="circle active">3</span>
+        <span class="circle">4</span>
+            <div class="progress-bar">
+            <span class="indicator"></span>
+            </div>
+    </div>
+    <div class="steps_text">
+        <span class="text_active">Lokasi Kejadian</span>
+        <span class="text_active">Detail</span>
+        <span class="text_active">Upload Bukti</span>
+        <span class="text">Submit</span>
+            <div class="progress-bar">
+            <span class="indicator"></span>
+            </div>
+    </div>
+    </div> 
+    
+    <!-- <div class="content">
         <header>
             <h2>PELAPORAN KEJADIAN ATAU BENCANA</h2>
             <p class="subtitle">Laporkan segala kejadian kejahatan maupun bencana yang ada di sekitar Anda!</p>
@@ -66,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="upload-container">
                 <div class="upload-section-container">
                         <div class="upload-section">
@@ -84,8 +104,8 @@
         
             <!-- Tombol button di bawah container -->
             <div class="submit-button-container">
-                <button type="button" onclick="backButton()">Back</button>
-                <button type="button" onclick="submitForm()">Submit</button>
+                <button type="button" onclick="backButton()"><a href="/lapor2">Back</a></button>
+                <button type="button" onclick="submitForm()"><a href="/lapor3_up2">Submit</a></button>
             </div>
         
             <div class="O2KPzo">

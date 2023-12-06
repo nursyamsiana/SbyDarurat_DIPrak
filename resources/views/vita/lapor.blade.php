@@ -5,8 +5,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/assets/globals_vita.css" />
+    <link rel="stylesheet" href="/assets/globals_vita2.css" />
   </head>
   <body>
     <div class="element-layar-pelaporan">
