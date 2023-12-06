@@ -88,14 +88,29 @@
             <!-- Tombol button di bawah container -->
             <div class="submit-button-container">
                 <button type="button" class="submit-button" onclick="backButton()">Back</button>
-                <button type="button" class="submit-button" onclick="openPopup()">Submit</button>
-                <div class="popup" id="popup">
-                    <img src="{{ asset('assets/icons/warning.png') }}">
+                <button type="button" class="submit-button" onclick="openFailedPopup()">Submit</button>
+                <div class="popup" id="failed-popup">
+                    <img src="assets/icons/warning.png">
                     <h2 class="failed-alert">Failed :(</h2>
-                    <button type="button" class="button-alert1">Reupload the Report</button>
-                    <button type="button" class="button-alert2" onclick="closePopup()" >Cancel the Report</button>
-                </div>
+                    <button type="button" class="button-alert1" onclick="openConfirmPopup()" >Reupload the Report</button>
+                    <button type="button" class="button-alert2" onclick="closeFailedPopup()" >Cancel the Report</button>
+                </div> 
+                <div class="popup" id="confirm-popup">
+                    <img src="assets/icons/sirine.png">
+                    <h2 class="failed-alert">Are you sure?</h2>
+                    <button type="button" class="button-alert1" onclick="openSuccessPopup()" >Yes</button>
+                    <button type="button" class="button-alert2" onclick="closeConfirmPopup()" >No</button>
+                </div> 
+                <div class="popup" id="success-popup">
+                    <img src="assets/icons/megaphone2.png">
+                    <h2 class="failed-alert">Success!</h2>
+                    <p class="subtext">Wait for the next step or</p>
+                    <button type="button" class="button-alert3" onclick="closeSuccessPopup()" >Click Here</button>
+                </div> 
+                
             </div>
+
+            
         
             <div class="O2KPzo">
                 <div class="mn7INg xFSVYg"> 
@@ -113,15 +128,35 @@
            container.innerHTML = ''; // Hapus konten di dalam kontainer
         }
 
-        let popup = document.getElementById("popup");
-        function openPopup(){
-            popup.classList.add("open-popup")
+        let failedPopup = document.getElementById("failed-popup");
+        function openFailedPopup(){
+            failedPopup.classList.add("open-popup")
         }
-        function closePopup(){
-            popup.classList.remove("open-popup")
+        function closeFailedPopup(){
+            failedPopup.classList.remove("open-popup")
+        }
+
+        let confirmPopup = document.getElementById("confirm-popup")
+        function openConfirmPopup(){
+            closeFailedPopup()
+            confirmPopup.classList.add("open-popup")
+        }
+        function closeConfirmPopup(){
+            confirmPopup.classList.remove("open-popup")
+        }
+
+        let successPopup = document.getElementById("success-popup")
+        function openSuccessPopup(){
+            closeConfirmPopup()
+            successPopup.classList.add("open-popup")
+        }
+
+        function closeSuccessPopup() {
+            successPopup.classList.remove("open-popup")
         }
      </script>
 </body>
 </html>
 
 @stop
+
