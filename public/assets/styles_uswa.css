@@ -377,3 +377,33 @@ p{
 .popup button {
     margin-top: 15px; /* Beri ruang antara tombol */
 }
+
+.popup .button-alert3 {
+    padding: 10px 15px;
+    background-color: #0C2180;
+    color: #fff;
+    width: 312px;
+    height: 53px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.popup .button-alert2:hover {
+    background-color: rgb(17, 70, 143, 0.25);
+}
+
+.popup .subtext {
+    font-size: 20px;
+    color: #777c8c; 
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: auto; 
+}
+
+
