@@ -1,18 +1,38 @@
 @extends('0_0navbar.base')
+@section('title')
 @section('content')
 
 <!-- MASUKIN HTML KALIAN DI BAWAH KOMEN INI -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles_uswa.css">
-    <title>Lapor</title>
-</head>
-<body>
+<link rel="stylesheet" href="assets/styles_uswa.css">
+<link rel="stylesheet" href="assets/style_nana.css">
 
-     <div class="content">
+<p class="title">PELAPORAN KEJADIAN ATAU BENCANA</p>
+<p class="subtitle">Laporkan segala kejadian kejahatan maupun bencana yang terjadi di sekitar Anda!</p>
+
+<br><br>
+
+<div class="container">
+    <div class="steps">
+        <span class="circle active">1</span>
+        <span class="circle active">2</span>
+        <span class="circle active">3</span>
+        <span class="circle">4</span>
+            <div class="progress-bar">
+            <span class="indicator"></span>
+            </div>
+    </div>
+    <div class="steps_text">
+        <span class="text_active">Lokasi Kejadian</span>
+        <span class="text_active">Detail</span>
+        <span class="text_active">Upload Bukti</span>
+        <span class="text">Submit</span>
+            <div class="progress-bar">
+            <span class="indicator"></span>
+            </div>
+    </div>
+    </div> 
+
+         <!-- <div class="content">
         <header>
             <h2>PELAPORAN KEJADIAN ATAU BENCANA</h2>
             <p class="subtitle">Laporkan segala kejadian kejahatan maupun bencana yang ada di sekitar Anda!.</p>
@@ -66,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="upload-container">
                 <div class="upload-section-container">
                      <div class="upload-section " id="upload-photo-section">
@@ -88,29 +108,14 @@
             <!-- Tombol button di bawah container -->
             <div class="submit-button-container">
                 <button type="button" class="submit-button" onclick="backButton()">Back</button>
-                <button type="button" class="submit-button" onclick="openFailedPopup()">Submit</button>
-                <div class="popup" id="failed-popup">
-                    <img src="assets/icons/warning.png">
+                <button type="button" class="submit-button" onclick="openPopup()">Submit</button>
+                <div class="popup" id="popup">
+                    <img src="{{ asset('assets/icons/warning.png') }}">
                     <h2 class="failed-alert">Failed :(</h2>
-                    <button type="button" class="button-alert1" onclick="openConfirmPopup()" >Reupload the Report</button>
-                    <button type="button" class="button-alert2" onclick="closeFailedPopup()" >Cancel the Report</button>
-                </div> 
-                <div class="popup" id="confirm-popup">
-                    <img src="assets/icons/sirine.png">
-                    <h2 class="failed-alert">Are you sure?</h2>
-                    <button type="button" class="button-alert1" onclick="openSuccessPopup()" >Yes</button>
-                    <button type="button" class="button-alert2" onclick="closeConfirmPopup()" >No</button>
-                </div> 
-                <div class="popup" id="success-popup">
-                    <img src="assets/icons/megaphone2.png">
-                    <h2 class="failed-alert">Success!</h2>
-                    <p class="subtext">Wait for the next step or</p>
-                    <button type="button" class="button-alert3" onclick="closeSuccessPopup()" >Click Here</button>
-                </div> 
-                
+                    <button type="button" class="button-alert1">Reupload the Report</button>
+                    <button type="button" class="button-alert2" onclick="closePopup()" >Cancel the Report</button>
+                </div>
             </div>
-
-            
         
             <div class="O2KPzo">
                 <div class="mn7INg xFSVYg"> 
@@ -128,35 +133,15 @@
            container.innerHTML = ''; // Hapus konten di dalam kontainer
         }
 
-        let failedPopup = document.getElementById("failed-popup");
-        function openFailedPopup(){
-            failedPopup.classList.add("open-popup")
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup")
         }
-        function closeFailedPopup(){
-            failedPopup.classList.remove("open-popup")
-        }
-
-        let confirmPopup = document.getElementById("confirm-popup")
-        function openConfirmPopup(){
-            closeFailedPopup()
-            confirmPopup.classList.add("open-popup")
-        }
-        function closeConfirmPopup(){
-            confirmPopup.classList.remove("open-popup")
-        }
-
-        let successPopup = document.getElementById("success-popup")
-        function openSuccessPopup(){
-            closeConfirmPopup()
-            successPopup.classList.add("open-popup")
-        }
-
-        function closeSuccessPopup() {
-            successPopup.classList.remove("open-popup")
+        function closePopup(){
+            popup.classList.remove("open-popup")
         }
      </script>
 </body>
 </html>
 
-@stop
-
+@endsection

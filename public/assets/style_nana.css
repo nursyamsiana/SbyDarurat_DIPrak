@@ -8,10 +8,6 @@
     font-family: 'Philosopher', sans-serif;
     font-family: 'Big Shoulders Stencil Text', sans-serif;
 }
-
-::-webkit-scrollbar {
-    width: 0.5px;
-  }
   
 .title {
     position: relative;

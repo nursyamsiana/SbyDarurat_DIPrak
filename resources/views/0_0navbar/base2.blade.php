@@ -29,12 +29,6 @@
 </nav>
 </header>
 
-@yield('title')
-<p class="title">PELAPORAN KEJADIAN ATAU BENCANA</p>
-<p class="subtitle">Laporkan segala kejadian kejahatan maupun bencana yang terjadi di sekitar Anda!</p>
-
-<br><br>
-
 @yield('content')
 
 </body>

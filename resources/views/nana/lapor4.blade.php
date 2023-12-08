@@ -1,13 +1,14 @@
 @extends('0_0navbar.base')
+@section('title')
 @section('content')
 
 <!-- MASUKIN HTML KALIAN DI BAWAH KOMEN INI -->
 <link rel="stylesheet" href="assets/style_nana.css">
-
+<!-- 
 <p class="title">PELAPORAN KEJADIAN ATAU BENCANA</p>
 <p class="subtitle">Laporkan segala kejadian kejahatan maupun bencana yang terjadi di sekitar Anda!</p>
 
-<br><br>
+<br><br> -->
 
 <div class="container">
     <div class="steps">
@@ -77,10 +78,13 @@
 
 <div class="container">
     <div class="buttons">
-        <button id="prev" disabled>Prev</button>
-        <button id="next">Next</button>
+        <button id="prev">Prev</button>
+        <button type="submit" id="next"><a href="/status_verif">Submit</a></button>
     </div>
 </div>
+<div class="popup">
+    <img src="">
+    <
 
-<script src="assets/stepper.js"></script>
-@stop
+<!-- <script src="assets/stepper.js"></script> -->
+@endsection

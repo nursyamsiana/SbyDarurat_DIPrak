@@ -1,4 +1,4 @@
-@extends('0_0navbar.base')
+@extends('0_0navbar.base2')
 @section('content')
 
 <!-- MASUKIN HTML KALIAN DI BAWAH KOMEN INI -->
@@ -20,7 +20,7 @@
                 <!-- Menampilkan nama laporan dalam kotak baris yang berbeda -->
                 <div class="report-item">
                     <span>  Nama Laporan 1</span>
-                    <button class="accepted-button" onclick="redirectToAcceptedPage('laporan1')">Accepted ></button>
+                    <a href="/verif"><button class="accepted-button" onclick="redirectToAcceptedPage('laporan1')">Accepted ></button></a>
                 </div>
                 <div class="report-item">
                     <span>  Nama Laporan 2</span>
@@ -57,15 +57,15 @@
             </div>
         </div>
     
-        <script>
+        <!-- <script>
             function goBack() {
                 window.history.back();
             }
     
             function redirectToAcceptedPage(reportName) {
-                window.location.href = 'nama_halaman_diterima?report=' + reportName;
+                window.location.href = '/verif' + reportName;
             }
-        </script>
+        </script> -->
     </body>
     </html>
     

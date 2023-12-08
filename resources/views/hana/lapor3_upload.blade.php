@@ -1,4 +1,5 @@
 @extends('0_0navbar.base')
+@section('title')
 @section('content')
 
 <!-- MASUKIN HTML KALIAN DI BAWAH KOMEN INI -->
@@ -13,10 +14,10 @@
 <body>
 
     <div class="content">
-        <header>
+        <!-- <header>
             <h2>PELAPORAN KEJADIAN ATAU BENCANA</h2>
             <p class="subtitle">Laporkan segala kejadian kejahatan maupun bencana yang ada di sekitar Anda!</p>
-        </header>
+        </header> -->
         <section>
             <h2 class="a11y-hidden"></h2>
             <div class="O2KPzo">
@@ -84,8 +85,8 @@
         
             <!-- Tombol button di bawah container -->
             <div class="submit-button-container">
-                <button type="button" onclick="backButton()">Back</button>
-                <button type="button" onclick="submitForm()">Submit</button>
+                <button type="button" onclick="backButton()"><a href="/lapor2">Back</a></button>
+                <button type="button" onclick="submitForm()"><a href="/lapor3_up2">Submit</a></button>
             </div>
         
             <div class="O2KPzo">
@@ -103,4 +104,4 @@
 </html>
 
 
-@stop
+@endsection
