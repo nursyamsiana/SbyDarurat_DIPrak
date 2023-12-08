@@ -19,8 +19,6 @@
   position: flex;
   width: 611px;
   height: 55px;
-  /* padding-top: 1000px;
-  padding-left: 150px; */
   all: unset;
   box-sizing: border-box;
 }
@@ -31,7 +29,7 @@
   height: 105px;
   /* top: -21px; */
   left: -21px;
-  background-image: url(./img/rectangle-10.svg);
+  background-image: url(./icons/rectangle-10.svg);
   background-size: 100% 100%;
 }
 
@@ -100,7 +98,7 @@
   height: 555px;
   top: 16px;
   left: 882px;
-  background-image: url(./img/13677890-5143183-removebg-preview.png);
+  background-image: url(./icons/globe.png);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -132,14 +130,6 @@
   object-fit: cover;
 }
 
-.dashboard .navbar {
-  position: absolute;
-  width: 1440px;
-  height: 106px;
-  top: 0;
-  left: 2px;
-}
-
 .dashboard .overlap {
   position: flex;
   height: 106px;
@@ -147,185 +137,64 @@
   padding-left: 130px;
 }
 
-.dashboard .rectangle {
-  width: 390px;
-  left: 1048px;
-  background-color: #eeeeee;
-  position: absolute;
-  height: 106px;
-  top: 0;
+.element-layar-pelaporan .div {
+  overflow: hidden;
+  width: 1400px;
+  height: 800px;
+  position: flex;
+  margin-top: 25px;
+  margin-left: 28%;
 }
 
-.dashboard .rectangle-2 {
-  width: 1048px;
-  left: 3px;
-  background-color: #0c217f;
-  position: absolute;
-  height: 106px;
-  top: 0;
+.element-layar-pelaporan .kotak {
+  position: flex;
+  width: 650px;
+  height: 350px;
+  background-color: #83869712;
+  border: 1px dashed;
+  border-color: #da1212;
 }
 
-.dashboard .line-2 {
-  position: absolute;
-  width: 1440px;
-  height: 1px;
-  top: 105px;
-  left: 0;
-  object-fit: cover;
-}
-
-.dashboard .tulisan {
-  position: absolute;
-  width: 589px;
-  height: 60px;
-  top: 23px;
-  left: 91px;
-}
-
-.dashboard .surabaya-darurat {
-  position: absolute;
-  width: 246px;
-  height: 60px;
-  top: 0;
-  left: 0;
-  font-family: "Philosopher", Helvetica;
-  font-weight: 400;
-  color: transparent;
-  font-size: 30px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 50px;
-  white-space: nowrap;
-}
-
-.dashboard .span {
-  color: #eeeeee;
-}
-
-.dashboard .text-wrapper-3 {
-  font-family: "Big Shoulders Stencil Text", Helvetica;
-  font-weight: 800;
-  color: #da1212;
-}
-
-.dashboard .text-wrapper-4 {
-  position: absolute;
-  width: 86px;
-  height: 43px;
-  top: 8px;
-  left: 500px;
-  font-family: "Montserrat", Helvetica;
-  font-weight: 600;
-  color: #eeeeee;
-  font-size: 20px;
-  letter-spacing: -1px;
-  line-height: normal;
-}
-
-.dashboard .kategori {
-  position: absolute;
-  width: 166px;
-  height: 43px;
-  top: 8px;
-  left: 280px;
-}
-
-.dashboard .overlap-group-2 {
+.element-layar-pelaporan .group {
   position: relative;
-  width: 164px;
-  height: 43px;
+  width: 526px;
+  height: 135px;
+  top: 85px;
+  left: 56px;
 }
 
-.dashboard .text-wrapper-5 {
+.element-layar-pelaporan .text-wrapper {
   position: absolute;
-  width: 158px;
-  height: 43px;
-  top: 0;
+  width: 524px;
+  height: 74px;
+  top: 10;
   left: 0;
   font-family: "Montserrat", Helvetica;
   font-weight: 600;
-  color: #eeeeee;
-  font-size: 20px;
+  color: #171e3f80;
+  font-size: 22px;
   text-align: center;
-  letter-spacing: -1px;
+  letter-spacing: 1.25px;
   line-height: normal;
 }
 
-.dashboard .angle-arrow-small {
+.element-layar-pelaporan .plus {
   position: absolute;
-  width: 32px;
-  height: 34px;
-  top: 9px;
-  left: 132px;
+  width: 50px;
+  height: 50px;
+  top: 100px;
+  left: 237px;
 }
 
-.dashboard .ikon {
-  position: absolute;
-  width: 240px;
-  height: 55px;
-  top: 20px;
-  left: 1123px;
+.element-layar-pelaporan .plus:hover, .element-layar-pelaporan .text-wrapper:hover {
+  color: rgb(61, 81, 139);
+  transition: 0.3s ease;
 }
 
-.dashboard .magnifier-2 {
-  top: 10px;
-  left: 195px;
+.element-layar-pelaporan .pelaporan {
   position: absolute;
-  width: 45px;
-  height: 45px;
-}
-
-.dashboard .overlap-2 {
-  position: absolute;
-  width: 52px;
-  height: 55px;
-  top: 0;
-  left: 98px;
-}
-
-.dashboard .bell {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  top: 10px;
-  left: 0;
-}
-
-.dashboard .group {
-  position: absolute;
-  width: 27px;
-  height: 25px;
-  top: 0;
-  left: 25px;
-}
-
-.dashboard .div-wrapper {
-  position: relative;
-  width: 25px;
-  height: 25px;
-  background-color: #da1212;
-  border-radius: 12.5px;
-}
-
-.dashboard .text-wrapper-6 {
-  position: absolute;
-  width: 10px;
-  height: 20px;
-  top: 3px;
-  left: 9px;
-  font-family: "Montserrat", Helvetica;
-  font-weight: 600;
-  color: #eeeeee;
-  font-size: 20px;
-  letter-spacing: -1px;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.dashboard .layer {
-  position: absolute;
-  width: 38px;
-  height: 38px;
-  top: 12px;
-  left: 0;
+  width: 910px;
+  height: 141px;
+  top: 159px;
+  left: 88px;
 }

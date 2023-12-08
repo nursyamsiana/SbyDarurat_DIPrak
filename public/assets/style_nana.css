@@ -48,15 +48,14 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  margin-left: 80px;
 }
 
 .steps .circle {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   color: #999;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
@@ -78,20 +77,24 @@
   background: #e0e0e0;
   z-index: -1;
 }
+
 .progress-bar .indicator {
   position: absolute;
-  height: 100%;
-  width: 0%;
+  height: 4px;
+  width: 20%;
   background: #4070f4;
 }
 
 .container .buttons {
   display: flex;
-  padding-left: 98%;
-  gap: 20%;
+  margin-left: 750px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  gap: 70%;
 }
+
 .buttons button {
-  padding: 10px 25px;
+  padding: 13px 25px;
   background: var(--blue);
   border: none;
   border-radius: 8px;
@@ -103,8 +106,9 @@
   transition: all 200ms linear;
 }
 
-.buttons button:active {
-  transform: scale(0.97);
+.buttons button:hover{
+  text-decoration: underline;
+  background: #0c218044;
 }
 
 .buttons button:disabled {
@@ -132,8 +136,8 @@ form option{
 
 .steps_text {
     display: flex;
-    width: 100%;
-    align-items: center;
+    width: 750px;
+    left: 20px;
     justify-content: space-between;
     position: relative;
   }
@@ -142,10 +146,8 @@ form option{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 40px;
-    margin-right: 100px;
     height: 50px;
-    width: 200px;
+    width: 150px;
     color: #999;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -155,3 +157,9 @@ form option{
     color: #4070f4;
   }
 
+@media (max-width: 1440px){
+  .steps_text {
+    width: 700px;
+    left: 20px;
+  }
+}

@@ -23,7 +23,7 @@
             </div>
         </li>
         <li><a href="/lapor">Lapor</a></li>
-        <li><a href="#">Notifikasi</a></li>
+        <li><a href="/status_verif">Notifikasi</p></a></li>
         <li><a href="#">Profil</a></li>
     </u1>
 </nav>

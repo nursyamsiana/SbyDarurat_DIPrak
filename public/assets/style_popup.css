@@ -1,0 +1,117 @@
+.popup .button-alert1, .popup2 .button-alert1{
+    padding: 10px 15px;
+    background-color: #0C2180;
+    color: #eee;
+    width: 312px;
+    height: 53px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+.popup .button-alert2, .popup2 .button-alert2{
+    padding: 10px 15px;
+    background-color: rgb(218, 18, 18);
+    color: #eee;
+    width: 312px;
+    height: 53px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.popup .button-alert1:hover,.popup2 .button-alert1:hover {
+    background-color: rgb(17,70,143, 0.25);
+}
+
+.popup .button-alert2:hover, .popup2 .button-alert2:hover {
+    background-color: rgb(17,70,143, 0.25);
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    margin: 30px 0 10px;
+    color: #333;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin: 30px 0 10px;
+    color: #333;
+}
+
+.popup, .popup2{
+    margin: auto;
+    width: 400px;
+    height: fit-content;
+    background: #eee;
+    border-radius: 6px;
+    top:50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    box-shadow: -8px 10px 5px  rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s, top 0.4s;
+    z-index: 1000;
+}
+
+.open-popup, .open-popup2{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup img, .popup2 img {
+    width: 150px; 
+    height: 150px; 
+    display: block;
+    margin: 0 auto; 
+    margin-top: -18%;
+    border-radius: 30%;
+}
+
+.popup button, .popup2 button {
+    margin-top: 15px; /* Beri ruang antara tombol */
+}
+
+.popup .button-alert3, 
+.popup2 .button-alert3 {
+    padding: 10px 15px;
+    background-color: #0C2180;
+    color: #eee;
+    width: 312px;
+    height: 53px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.popup .button-alert2:hover, .popup2 .button-alert2:hover {
+    background-color: rgb(17, 70, 143, 0.25);
+}
+
+.popup .subtext, .popup2 .subtext {
+    font-size: 20px;
+    color: #777c8c; 
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin: auto; 
+}

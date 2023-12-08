@@ -4,18 +4,15 @@
 
 <!-- MASUKIN HTML KALIAN DI BAWAH KOMEN INI -->
 <link rel="stylesheet" href="assets/style_nana.css">
-<!-- 
-<p class="title">PELAPORAN KEJADIAN ATAU BENCANA</p>
-<p class="subtitle">Laporkan segala kejadian kejahatan maupun bencana yang terjadi di sekitar Anda!</p>
+<link rel="stylesheet" href="assets/style_popup.css">
 
-<br><br> -->
 
 <div class="container">
     <div class="steps">
         <span class="circle active">1</span>
-        <span class="circle">2</span>
-        <span class="circle">3</span>
-        <span class="circle">4</span>
+        <span class="circle active">2</span>
+        <span class="circle active">3</span>
+        <span class="circle active">4</span>
             <div class="progress-bar">
             <span class="indicator"></span>
             </div>
@@ -26,24 +23,16 @@
         <span class="text_active">Upload Bukti</span>
         <span class="text_active">Submit</span>
             <div class="progress-bar">
-            <span class="indicator"></span>
             </div>
     </div>
     </div>    
-    <!-- <div class="steps_text">
-        <li class="step1_active">Lokasi Kejadian</li>
-        <li class="step2_active">Detail</li>
-        <li class="step3_active">Upload Bukti</li>
-        <li class="step4">Submit</li>
-    </div> -->
-
     
 <p class="subtitle">Isi detail pada masing-masing kolom!</p>
 <p class="subtitle">Kejadian/Peristiwa<span style="color: #DA1212; font-size: 25;">*</span></p>
     <form>
     <div class="form_kejadian">
         <select id="kejadian">
-          <option value="" selected disabled>Pilih jenis kejadian/peristiwa</option>
+          <option value="" selected disabled>Kecelakaan LanTas</option>
           <option value="ba">Bencana Alam</option>
           <option value="kk">Kecelakaan Kerja</option>
           <option value="kl">Kecelakaan LanTas</option>
@@ -53,13 +42,13 @@
     </form>
 <p class="subtitle">Tanggal Kejadian<span style="color: #DA1212; font-size: 25;">*</span></p>
     <form>
-        <input type="date" id="date" placeholder="Select your date">
+        <input type="date" id="date" placeholder="05/12/2023">
     </form>
 <p class="subtitle">Waktu Kejadian<span style="color: #DA1212; font-size: 25;">*</span></p>
     <form>
     <div class="form_kejadian">
         <select id="kejadian">
-          <option value="" selected disabled>Pilih rentang waktu kejadian</option>
+          <option value="" selected disabled>00.00-05.00</option>
           <option value="ba">00.00 - 05.00</option>
           <option value="kk">05.01 - 11.59</option>
           <option value="kl">12.00 - 17.59</option>
@@ -69,22 +58,62 @@
     </form>
 <p class="subtitle">Kronologi Kejadian<span style="color: #DA1212; font-size: 25;">*</span></p>
     <form>
-        <textarea id="kronologi" placeholder="Jabarkan kronologi kejadian"></textarea>
+        <textarea id="kronologi" placeholder="terjadi kecelakaan akibat pengendara nekat menerobos lampu merah hingga menabrak pohon"></textarea>
     </form>
-<p class="subtitle">Gambar dan/atau Video Bukti<span style="color: #DA1212; font-size: 25;">*</span></p>
+<p class="subtitle">Foto/Video Bukti<span style="color: #DA1212; font-size: 25;">*</span></p>
     <form enctype="multipart/form-data" action="/proses_upload.php" method="post">
-        <input type="file" id="lampiran" name="lampiran" accept=".pdf, .doc, .jpg, .png">
+        <input type="file" id="lampiran" placeholder="bukti.jpg" name="lampiran" accept=".pdf, .doc, .jpg, .png">
     </form>
+
+
+
 
 <div class="container">
     <div class="buttons">
-        <button id="prev">Prev</button>
-        <button type="submit" id="next"><a href="/status_verif">Submit</a></button>
+        <button id="prev"><a href="/lapor3_up2">Prev</a></button>
+        <button type="submit" id="next" onclick="openPopup()">Submit</button>
     </div>
-</div>
-<div class="popup">
-    <img src="">
-    <
 
-<!-- <script src="assets/stepper.js"></script> -->
+
+<div class="popup" id="popup">
+    <img src="{{ asset('assets/icons/warning.png') }}">
+        <h2>Apakah Anda yakin?</h2>
+        <p>*cek ulang form pelaporan sebelum melakukan submit</p>
+        <button type="button" class="button-alert1" onclick="openPopup2()">Submit Form
+        </button>
+        <button type="button" class="button-alert2" onclick="closePopup()">Back</button>
+</div>
+
+
+<div class="popup2" id="popup2">
+    <img src="{{ asset('assets/icons/megaphone2.png') }}">
+        <h2>Pelaporan telah diterima</h2>
+        <p>*proses verifikasi dapat dipantau melalui "Notifikasi" pada navbar</p>
+        <button type="button" class="button-alert1"><a href="/status_verif">Check Reports</a>
+        </button>
+        <button type="button" class="button-alert2"><a href="/">Back to Home</a></button>
+</div>
+</div>
+
+<script>
+    let popup = document.getElementById("popup");
+    let popup2 = document.getElementById("popup2");
+
+    function openPopup() {
+        popup.classList.add("open-popup");
+    }
+
+    function openPopup2() {
+        popup2.classList.add("open-popup");
+        popup.classList.remove("open-popup");
+    }
+
+    function closePopup() {
+        popup.classList.remove("open-popup");
+    }
+
+    progressBar = document.querySelector(".indicator");
+    progressBar.style.width = `100%`;
+</script>
+
 @endsection

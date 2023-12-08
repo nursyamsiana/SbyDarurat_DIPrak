@@ -2,20 +2,12 @@
 @section('content')
 
 <!-- MASUKIN HTML KALIAN DI BAWAH KOMEN INI -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style_status.css">
-    <title>Daftar Report</title>
-</head>
-    <body>
+<link rel="stylesheet" href="assets/style_status.css">
+    
+<body>
         <div class="report-container">
-            <button class="back-button" onclick="goBack()"> < Back </button>
-            <header>
+            <button class="back-button" onclick="goBack('/')"> < Back </button>
                 <h1>Uploaded Reports List</h1>
-            </header>
             <div class="report-list">
                 <!-- Menampilkan nama laporan dalam kotak baris yang berbeda -->
                 <div class="report-item">
@@ -56,18 +48,6 @@
                 </div>
             </div>
         </div>
-    
-        <!-- <script>
-            function goBack() {
-                window.history.back();
-            }
-    
-            function redirectToAcceptedPage(reportName) {
-                window.location.href = '/verif' + reportName;
-            }
-        </script> -->
-    </body>
-    </html>
     
 
 @stop

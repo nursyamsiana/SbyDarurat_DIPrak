@@ -3,21 +3,20 @@
 
 <!-- MASUKIN HTML KALIAN DI BAWAH KOMEN INI -->
     <link rel="stylesheet" href="/assets/style_vita.css" />
-    <link rel="stylesheet" href="/assets/style_vita2.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
  
     <div class="dashboard">
       <div class="div">
+        <div class="text-wrapper-2">Welcome Back, User123!</div>
         <p class="p">
           Laporkan dan bagikan informasi yang Anda miliki, termasuk peristiwa bencana maupun kejadian kejahatan yang
           terjadi di wilayah Surabaya. Tetap mawas, tetap waras.
         </p>
-        <div class="text-wrapper-2">Welcome Back, User123!</div>
-        <img class="line" src="img/line-17.svg" />
+        <img class="line" src="assets/icons/line-17.svg" />
         <div class="gambar">
           <img class="screenshot" src="/assets/icons/warning.png" />
-          <img class="img" src="/assets/icons/warning.png" />
-          <img class="screenshot-2" src="/assets/icons/warning.png" />
+          <img class="img" src="/assets/icons/warning3.png" />
+          <img class="screenshot-2" src="/assets/icons/warning2.png" />
         </div>
         <div class="navbar">
           <div class="overlap">

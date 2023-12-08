@@ -4,12 +4,6 @@
 
 <!-- MASUKIN HTML KALIAN DI BAWAH KOMEN INI -->
 <link rel="stylesheet" href="assets/styles_uswa.css">
-<link rel="stylesheet" href="assets/style_nana.css">
-
-<p class="title">PELAPORAN KEJADIAN ATAU BENCANA</p>
-<p class="subtitle">Laporkan segala kejadian kejahatan maupun bencana yang terjadi di sekitar Anda!</p>
-
-<br><br>
 
 <div class="container">
     <div class="steps">
@@ -27,66 +21,11 @@
         <span class="text_active">Upload Bukti</span>
         <span class="text">Submit</span>
             <div class="progress-bar">
-            <span class="indicator"></span>
             </div>
     </div>
     </div> 
 
-         <!-- <div class="content">
-        <header>
-            <h2>PELAPORAN KEJADIAN ATAU BENCANA</h2>
-            <p class="subtitle">Laporkan segala kejadian kejahatan maupun bencana yang ada di sekitar Anda!.</p>
-        </header>
-        <section>
-            <h2 class="a11y-hidden"></h2>
-            <div class="O2KPzo">
-                <div class="mn7INg xFSVYg"> 
-                </div>
-                <div class="mn7INg EfbgJE"> 
-                </div>
-            </div>
-            <div class="bHBbO4">
-                <div class="stepper">
-                    <div class="stepper__step stepper__step--finish" aria-label="Lokasi kejadian" tabindex="0">
-                        <div class="stepper__step-icon stepper__step-icon--finish">
-                            1
-                        </div>
-                        <div class="stepper__step-text">Lokasi kejadian
-                        </div>
-
-                    </div>
-                    <div class="stepper__step stepper__step--finish" aria-label="Details" tabindex="0">
-                        <div class="stepper__step-icon stepper__step-icon--finish">
-                            2
-                        </div>
-                        <div class="stepper__step-text">Details
-                        </div>
-                    </div>
-                    <div class="stepper__step stepper__step--finish" aria-label="pesanan dikirimkan" tabindex="0">
-                        <div class="stepper__step-icon stepper__step-icon--finish">
-                            3
-                        </div>
-                        <div class="stepper__step-text">Upload bukti
-                        </div>
-
-                    </div>
-                    <div class="stepper__step stepper__step--finish" aria-label="Submit" tabindex="0">
-                        <div class="stepper__step-icon stepper__step-icon--finish1"  style="background: rgb(224, 224, 224)">
-                            4
-                        </div>
-                        <div class="stepper__step-text">Submit
-                        </div>
-
-                    </div>
-
-                    <div class="stepper__line">
-                        <div class="stepper__line-background" style="background: rgb(224, 224, 224);">
-                        </div>
-                        <div class="stepper__line-foreground" style="width: calc((100% - 500px) * 1); background: #0C2180;">
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+       
             <div class="upload-container">
                 <div class="upload-section-container">
                      <div class="upload-section " id="upload-photo-section">
@@ -105,43 +44,17 @@
                 </div>
             </div>
         
-            <!-- Tombol button di bawah container -->
-            <div class="submit-button-container">
-                <button type="button" class="submit-button" onclick="backButton()">Back</button>
-                <button type="button" class="submit-button" onclick="openPopup()">Submit</button>
-                <div class="popup" id="popup">
-                    <img src="{{ asset('assets/icons/warning.png') }}">
-                    <h2 class="failed-alert">Failed :(</h2>
-                    <button type="button" class="button-alert1">Reupload the Report</button>
-                    <button type="button" class="button-alert2" onclick="closePopup()" >Cancel the Report</button>
-                </div>
-            </div>
+            
         
-            <div class="O2KPzo">
-                <div class="mn7INg xFSVYg"> 
-                </div>
-                <div class="mn7INg EfbgJE"> 
-                </div>
-            </div>
-        </section>
+<div class="container">
+    <div class="buttons">
+        <button id="prev"><a href="/lapor3_up1">Prev</a></button>
+        <button id="next"><a href="/lapor4">Next</a></button>
     </div>
+</div>
 
-    <!-- Your page content goes here -->
-    <script>
-        function removeFile(containerId) {
-           var container = document.getElementById(containerId);
-           container.innerHTML = ''; // Hapus konten di dalam kontainer
-        }
-
-        let popup = document.getElementById("popup");
-        function openPopup(){
-            popup.classList.add("open-popup")
-        }
-        function closePopup(){
-            popup.classList.remove("open-popup")
-        }
-     </script>
-</body>
-</html>
-
+<script>
+    progressBar = document.querySelector(".indicator");
+    progressBar.style.width = `80%`;
+</script>
 @endsection
