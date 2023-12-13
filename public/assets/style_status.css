@@ -1,3 +1,13 @@
+:root{
+    --main-color: #eeeeee;
+    --black: #171F40;
+    --blue: #0C2180;
+    --red: #DA1212;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Philosopher', sans-serif;
+    font-family: 'Big Shoulders Stencil Text', sans-serif;
+}
+
 h1 {
     color: #171F40;
     padding: 30px;
@@ -10,7 +20,13 @@ h1 {
     margin-top: 5px;
 }
 
+.report-item span{
+    color: var(--black);
+}
+
 .report-item {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--black);
     display: flex;
     justify-content: space-between;
     border: 1px solid #ddd;
