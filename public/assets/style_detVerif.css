@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+    --main-color: #eeeeee;
+    --black: #171F40;
+    --blue: #0C2180;
+    --red: #DA1212;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Philosopher', sans-serif;
+    font-family: 'Big Shoulders Stencil Text', sans-serif;
+}
+
+.top,
+.left,
+.right,
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+.arrow-back {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.arrow {
+    width: 15px;
+    height: auto;
+}
+
+.reportId,
+.divide,
+.verif_status {
+    font-family: 'Poppins', sans-serif;
+}
+
+.reportId,
+.divide {
+    margin-right: 4px;
+}
+
+.line {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: black;
+}
+
+.box {
+    align-items: center;
+    border-radius: 10px;
+    background-color: #8e97c1;
+    box-shadow: 0 0 20px rgba(12, 33, 128, 0.5);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.container {
+    z-index: 1;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-width: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    padding-top: 25px;
+    gap: 20px;
+    width: 42%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container .steps {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.steps .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    color: #999;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50%;
+    background: #fff;
+    border: 4px dashed #e0e0e0;
+}
+
+.steps .circle.active {
+    border: solid #4070f4;
+    color: #4070f4;
+}
+
+.steps .progress-bar {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #e0e0e0;
+    z-index: -1;
+}
+
+.progress-bar .indicator {
+    position: absolute;
+    height: 4px;
+    width: 70%;
+    background: #4070f4;
+}
+
+.steps_text {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.text_active {
+    width: calc(25% - 20px);
+    /* 25% of the container width with some spacing */
+    text-align: center;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+    margin: 10px;
+}
+
+.bottom {
+    width: 300;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 100px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-between;
+}
+
+.detail_left {
+    width: 500px;
+}
+
+.detailReport {
+    margin-left: 10px;
+}
+
+.detail_report {
+    font-weight: 800;
+}
+
+.reportBy,
+.reportTo {
+    font-weight: 600;
+}
+
+
+.lineDetail_top {
+    position: absolute;
+    height: 1px;
+    width: 20%;
+    background: #999;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+
+.lineDetail_side {
+    align-items: center;
+    position: absolute;
+    height: 30%;
+    width: 2px;
+    background: #999;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.detail_right .container {
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.statuLabel, .detail_status {
+    font-family: 'Poppins', sans-serif;   
+}
+
+.statusLabel {
+    font-weight: 600;
+}
