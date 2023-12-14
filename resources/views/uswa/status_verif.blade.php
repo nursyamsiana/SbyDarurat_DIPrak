@@ -6,7 +6,7 @@
     
 <body>
         <div class="report-container">
-            <button class="back-button" onclick="goBack('/')"> < Back </button>
+        <button class="back-button" onclick="goBack('/status_verif')"><a href="/" class="back-button" > < Back </a></button>
                 <h1>Uploaded Reports List</h1>
             <div class="report-list">
                 <!-- Menampilkan nama laporan dalam kotak baris yang berbeda -->

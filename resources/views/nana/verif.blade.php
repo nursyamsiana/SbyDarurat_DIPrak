@@ -6,7 +6,7 @@
 
 <div class="top">
         <div class="left">
-        <button class="back-button" onclick="goBack('/')"> < Back </button>
+        <button class="back-button" onclick="goBack('/status_verif')"><a href="/status_verif" class="back-button" > < Back </a></button>
         </div>
         <div class="right">
             <div class="reportId">
@@ -29,7 +29,7 @@
                 <span class="circle active">1</span>
                 <span class="circle active">2</span>
                 <span class="circle active">3</span>
-                <span class="circle">4</span>
+                <span class="circle active">4</span>
                 <div class="progress-bar">
                     <span class="indicator"></span>
                 </div>
@@ -79,7 +79,49 @@
                     <div class="progress-bar">
                     </div>
                 </div>
+
+                <!-- <div class="status">
+                <div class="steps1">
+                    <div class="circle1">1</div>
+                    <div class="progress-bar1">
+                        <div class="indicator1"></div>
+                    </div>
+                </div>
+                
+                <div class="step-content">
+                <div class="statusLabel">Topic</div>
+                <p class="detail_status">Lorem ipsum</p>
+                </div>
+
+                <div class="steps1">
+                    <div class="circle1">2</div>
+                    <div class="progress-bar1">
+                        <div class="indicator1"></div>
+                    </div>
+                </div>
+                <div class="step-content">
+                <div class="statusLabel">Fill Content</div>
+                <p class="detail_status">Lorem ipsum</p>
+                </div>
+
+                <div class="steps1">
+                    <div class="circle1">3</div>
+                    <div class="progress-bar1">
+                        <div class="indicator1"></div>
+                    </div>
+                </div>
+                <div class="step-content">
+                <div class="statusLabel">Verified By</div>
+                <p class="detail_status">Lorem ipsum</p>
+            </div>
+            </div> -->
+
+
             </div>
         </div>
     </div>
+    
+<script>
+    progressBar.style.width = `100%`;
+</script>
 @stop

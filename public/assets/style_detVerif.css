@@ -51,6 +51,11 @@
    margin: 20px;
 }
 
+.verif_status .verif{
+    font-weight: 500;
+    color: #2553d1;
+}
+
 /* 
 .reportId,
 .divide {
@@ -113,27 +118,28 @@
     font-size: 18px;
     font-weight: 500;
     border-radius: 50%;
-    background: #fff;
-    border: 4px dashed #e0e0e0;
+    background: #c8d1ec;
+    border: 2px dashed #f9f6f6;
 }
 
 .steps .circle.active {
     border: solid #4070f4;
     color: #4070f4;
+    background: var(--main-color);
 }
 
 .steps .progress-bar {
     position: absolute;
     height: 4px;
     width: 100%;
-    background: #e0e0e0;
+    background: #c8d1ec;
     z-index: -1;
 }
 
 .progress-bar .indicator {
     position: absolute;
     height: 4px;
-    width: 70%;
+    width: 100%;
     background: #4070f4;
 }
 
@@ -159,7 +165,7 @@
 .bottom {
     width: 50%;
     align-items: center;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     margin-right: 100px;
     font-family: 'Montserrat', sans-serif;
     justify-content: space-between;
@@ -207,10 +213,12 @@
 .detail_right .container {
     align-items: center;
     justify-content: space-between;
-    margin: 50px;
+    margin-left: 50px;
+    /* margin: 50px; */
 }
 
 .statuLabel, .detail_status {
+    text-align: left;
     color: var(--blue);
     font-family: 'Poppins', sans-serif;   
 }
@@ -222,4 +230,71 @@
 
 .emailUser, .emailGov{
     color: var(--blue);
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.steps1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.circle1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    color: #999;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50%;
+    background: #c8d1ec;
+    border: 2px dashed #f9f6f6;
+}
+
+.circle1.active {
+    border: solid #4070f4;
+    color: #4070f4;
+    background: var(--main-color);
+}
+
+.progress-bar1 {
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #c8d1ec;
+    z-index: -1;
+}
+
+.progress-bar1 .indicator1 {
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #4070f4;
+}
+
+.statusLabel {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.detail_status {
+    text-align: left;
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.step-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
